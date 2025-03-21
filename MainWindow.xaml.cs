@@ -24,18 +24,18 @@ namespace Delta_Silence_Launcher
             this.WindowState = WindowState.Minimized;
         }
 
-        // Full Screen Toggle Button
+        
         private void FullScreenButton_Click(object sender, RoutedEventArgs e)
         {
             if (this.WindowState == WindowState.Maximized)
             {
                 this.WindowState = WindowState.Normal;
-                FullScreenButton.Content = "⛶"; // Restore symbol
+                FullScreenButton.Content = "⛶"; 
             }
             else
             {
                 this.WindowState = WindowState.Maximized;
-                FullScreenButton.Content = "❐"; // Maximize symbol
+                FullScreenButton.Content = "❐"; 
             }
         }
 
@@ -44,7 +44,7 @@ namespace Delta_Silence_Launcher
             this.Close();
         }
 
-        // Hide all sub-screens
+        
         private void HideAllGrids()
         {
             HomeGrid.Visibility = Visibility.Hidden;
